@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Music Creator</title>
+<style>
+body { font-family: Arial, sans-serif; text-align: center; background: #0d0d0d; color: #fff; margin: 0; padding: 40px; }
+h1 { color: #00ffcc; }
+button { background: #00ffcc; border: none; padding: 12px 24px; font-size: 16px; border-radius: 8px; cursor: pointer; }
+button:hover { background: #00cca3; }
+.box { margin-top: 30px; padding: 20px; border: 1px solid #222; border-radius: 10px; background: #1a1a1a; max-width: 400px; margin-left: auto; margin-right: auto; }
+</style>
+</head>
+<body>
+<h1>AI Music Creator</h1>
+<p>Generate unique music with a single click.</p>
+<button onclick="createMusic()">🎵 Create Music</button>
+<div class="box" id="output">Your music will appear here...</div>
+
+
+<script>
+function createMusic() {
+const tunes = ["Lo-Fi Beats", "Chill Vibes", "Epic Synth", "Jazz Flow", "Futuristic Bass"];
+const random = tunes[Math.floor(Math.random() * tunes.length)];
+document.getElementById('output').textContent = `AI generated: ${random}`;
+}
+</script>
+</body>
+</html>
